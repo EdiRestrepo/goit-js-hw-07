@@ -41,6 +41,11 @@ listGallery.addEventListener("click", selectlibrary);
 
 function selectlibrary(event) {
     event.preventDefault();
-    let lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+    let lightbox = new SimpleLightbox('.gallery a', { 
+        captionsData: 'alt',
+        captionDelay: 250,
+     });
+    
+    
   }
 
